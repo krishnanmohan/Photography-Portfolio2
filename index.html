@@ -1024,9 +1024,9 @@
     <h2 class="category-title">Forest</h2>
     <div class="masonry-grid">
       <div class="photo-card" onclick="openModal(5)">
-        <!--<div class="photo-placeholder">Forest 2</div>-->
-        <img src="images/IMG_0663.jpg" class="photo-placeholder" alt="Sunlit forest trail winding through dense mist beneath tall trees, creating a calm, tranquil atmosphere">
-        <!-- <img src="images/your-photo.jpg" class="photo-placeholder" alt="description"> -->
+        <div class="photo-placeholder">Forest 2</div>
+        <!--<img src="images/IMG_0663.jpg" class="photo-placeholder" alt="Sunlit forest trail winding through dense mist beneath tall trees, creating a calm, tranquil atmosphere">
+        <img src="images/your-photo.jpg" class="photo-placeholder" alt="description"> -->
         <div class="photo-info">
           <h4>Morning Mist</h4>
           <p>Western Ghats, Karnataka</p>
@@ -1050,6 +1050,13 @@
         <div class="photo-placeholder">Forest 4</div>
         <div class="photo-info">
           <h4>Green Silence</h4>
+          <p>Bandipur, Karnataka</p>
+        </div>
+      </div>
+      <div class="photo-card" onclick="openModal(8)">
+        <div class="photo-placeholder">Forest 5</div>
+        <div class="photo-info">
+          <h4>Green Silence2</h4>
           <p>Bandipur, Karnataka</p>
         </div>
       </div>
@@ -1088,6 +1095,13 @@
           <p>Kodachadri, Karnataka</p>
         </div>
       </div>
+      <div class="photo-card" onclick="openModal(12)">
+        <div class="photo-placeholder">Water 4</div>
+        <div class="photo-info">
+          <h4>Dawn Reflection2</h4>
+          <p>Kodachadri, Karnataka</p>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -1095,6 +1109,34 @@
   <div class="category-section">
     <h2 class="category-title">Sky</h2>
     <div class="masonry-grid">
+      <div class="photo-card" onclick="openModal(13)">
+        <div class="photo-placeholder">Sky 1</div>
+        <div class="photo-info">
+          <h4>Golden Hour</h4>
+          <p>Nandi Hills, Karnataka</p>
+        </div>
+      </div>
+      <div class="photo-card" onclick="openModal(14)">
+        <div class="photo-placeholder">Sky 2</div>
+        <div class="photo-info">
+          <h4>Storm Coming</h4>
+          <p>Monsoon Season</p>
+        </div>
+      </div>
+      <div class="photo-card" onclick="openModal(15)">
+        <div class="photo-placeholder">Sky 3</div>
+        <div class="photo-info">
+          <h4>Sunset Glow</h4>
+          <p>Hampi, Karnataka</p>
+        </div>
+      </div>
+      <div class="photo-card" onclick="openModal(16)">
+        <div class="photo-placeholder">Sky 4</div>
+        <div class="photo-info">
+          <h4>Night Sky</h4>
+          <p>Stars Aligned</p>
+        </div>
+      </div>
       <div class="photo-card" onclick="openModal(13)">
         <div class="photo-placeholder">Sky 1</div>
         <div class="photo-info">
@@ -1135,6 +1177,27 @@
         <div class="photo-info">
           <h4>Peak Summit</h4>
           <p>Mullayanagiri, Karnataka</p>
+        </div>
+      </div>
+      <div class="photo-card" onclick="openModal(18)">
+        <div class="photo-placeholder">Mountain 2</div>
+        <div class="photo-info">
+          <h4>Ridge Walk</h4>
+          <p>High Altitude</p>
+        </div>
+      </div>
+      <div class="photo-card" onclick="openModal(19)">
+        <div class="photo-placeholder">Mountain 3</div>
+        <div class="photo-info">
+          <h4>Rocky Terrain</h4>
+          <p>Kabini, Karnataka</p>
+        </div>
+      </div>
+      <div class="photo-card" onclick="openModal(20)">
+        <div class="photo-placeholder">Mountain 4</div>
+        <div class="photo-info">
+          <h4>Valley View</h4>
+          <p>Sakleshpur, Karnataka</p>
         </div>
       </div>
       <div class="photo-card" onclick="openModal(18)">
@@ -1268,31 +1331,40 @@
 <script>
 const photos = [
   // Carousel
-  { src: '', title: 'Latest Photo 1', location: 'Location' },
-  { src: '', title: 'Latest Photo 2', location: 'Location' },
-  { src: '', title: 'Latest Photo 3', location: 'Location' },
-  { src: '', title: 'Latest Photo 4', location: 'Location' },
-  { src: '', title: 'Latest Photo 5', location: 'Location' },
+  { src: 'images/IMG_0663.jpg', title: 'Latest Photo 1', location: 'Location' },
+  { src: 'images/IMG_1237.jpg', title: 'Latest Photo 2', location: 'Location' },
+  { src: 'images/IMG_3366.jpg', title: 'Latest Photo 3', location: 'Location' },
+  { src: 'images/IMG_20260115_152611781.jpg', title: 'Latest Photo 4', location: 'Location' },
+  { src: 'images/IMG_2237.jpg', title: 'Latest Photo 5', location: 'Location' },
   // Forest
-  { src: '', title: 'Morning Mist', location: 'Western Ghats, Karnataka' },
-  { src: '', title: 'Silent Path', location: 'Coorg, Karnataka' },
-  { src: '', title: 'Canopy Light', location: 'Nagarhole National Park' },
-  { src: '', title: 'Green Silence', location: 'Bandipur, Karnataka' },
+  { src: 'images/IMG_20251026_063139724 (1) - Copy - Copy.jpg', title: 'Morning Mist', location: 'Western Ghats, Karnataka' },
+  { src: 'images/IMG_20251026_063152448 - Copy - Copy.jpg', title: 'Silent Path', location: 'Coorg, Karnataka' },
+  { src: 'images/IMG_20251026_063223073 - Copy - Copy.jpg', title: 'Canopy Light', location: 'Nagarhole National Park' },
+  { src: 'images/IMG_20251026_063304055 (1) - Copy - Copy.jpg', title: 'Green Silence', location: 'Bandipur, Karnataka' },
+  { src: 'images/IMG_20251026_063327439 (1) - Copy - Copy.jpg', title: 'Green Silence2', location: 'Bandipur, Karnataka' },
   // Water
-  { src: '', title: 'Flowing Waters', location: 'Kudremukh, Karnataka' },
-  { src: '', title: 'Mirror Lake', location: 'Chikmagalur, Karnataka' },
-  { src: '', title: 'Cascade', location: 'Shimoga, Karnataka' },
-  { src: '', title: 'Dawn Reflection', location: 'Kodachadri, Karnataka' },
+  { src: 'images/IMG_0663.jpg', title: 'Flowing Waters', location: 'Kudremukh, Karnataka' },
+  { src: 'images/IMG_0684.jpg', title: 'Mirror Lake', location: 'Chikmagalur, Karnataka' },
+  { src: 'images/IMG_0701.jpg', title: 'Cascade', location: 'Shimoga, Karnataka' },
+  { src: 'images/IMG_0770 (3) (1).jpg', title: 'Dawn Reflection', location: 'Kodachadri, Karnataka' },
+  { src: 'images/IMG_0768 (2) (1).jpg', title: 'Dawn Reflection2', location: 'Kodachadri, Karnataka' },
   // Sky
-  { src: '', title: 'Golden Hour', location: 'Nandi Hills, Karnataka' },
-  { src: '', title: 'Storm Coming', location: 'Monsoon Season' },
-  { src: '', title: 'Sunset Glow', location: 'Hampi, Karnataka' },
-  { src: '', title: 'Night Sky', location: 'Stars Aligned' },
+  { src: 'images/IMG_0367 (1).jpg', title: 'Golden Hour', location: 'Nandi Hills, Karnataka' },
+  { src: 'images/IMG_0369 (1).jpg', title: 'Storm Coming', location: 'Monsoon Season' },
+  { src: 'images/IMG_0375.jpg', title: 'Sunset Glow', location: 'Hampi, Karnataka' },
+  { src: 'images/IMG_0393 (1).jpg', title: 'Night Sky', location: 'Stars Aligned' },
+  { src: 'images/IMG_0437 (1).jpg', title: 'Golden Hour', location: 'Nandi Hills, Karnataka' },
+  { src: 'images/IMG_0399 (1).jpg', title: 'Storm Coming', location: 'Monsoon Season' },
+  { src: 'images/IMG_0541 (1).jpg', title: 'Sunset Glow', location: 'Hampi, Karnataka' },
+  { src: 'images/IMG_0379.jpg', title: 'Night Sky', location: 'Stars Aligned' },
   // Mountains
-  { src: '', title: 'Peak Summit', location: 'Mullayanagiri, Karnataka' },
-  { src: '', title: 'Ridge Walk', location: 'High Altitude' },
-  { src: '', title: 'Rocky Terrain', location: 'Kabini, Karnataka' },
-  { src: '', title: 'Valley View', location: 'Sakleshpur, Karnataka' },
+  { src: 'images/IMG_1104 - Copy.jpg', title: 'Peak Summit', location: 'Mullayanagiri, Karnataka' },
+  { src: 'images/IMG_1140 - Copy.jpg', title: 'Ridge Walk', location: 'High Altitude' },
+  { src: 'images/IMG_1145 - Copy.jpg', title: 'Rocky Terrain', location: 'Kabini, Karnataka' },
+  { src: 'images/IMG_1119 - Copy.jpg', title: 'Valley View', location: 'Sakleshpur, Karnataka' },
+  { src: 'images/IMG_1299 - Copy.jpg', title: 'Ridge Walk', location: 'High Altitude' },
+  { src: 'images/IMG_1302 - Copy.jpg', title: 'Rocky Terrain', location: 'Kabini, Karnataka' },
+  { src: 'images/IMG_1332 (1) - Copy.jpg', title: 'Valley View', location: 'Sakleshpur, Karnataka' },
 ];
 
 let currentPhotoIndex = 0;
